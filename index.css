@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,800;1,100&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: rgb(4, 4, 72);
+}
+
+body {
+    font-family: "poppins";
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px 8px;
+}
+
+
+.nav_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 24px;
+}
+
+.nav_left {
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.logo i,
+.logo p {
+    font-size: 25px;
+}
+
+.logo span {
+    color: red;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav_list li {
+    padding: 5px 8px;
+    transition: all 0.3s ease;
+}
+
+.nav_list li :hover {
+    color: rgb(215, 214, 218);
+}
+
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.input_box {
+    border: 1px solid white;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 8px;
+}
+
+
+.search_bar .input_box input {
+    border: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.search_bar .input_box input:focus {
+    outline: none;
+}
+
+.search_bar i {
+    padding: 8px;
+    background-color: rgb(58, 58, 107);
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inactive {
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}
+
+.search_bar i:hover {
+    color: rgb(215, 214, 218);
+}
