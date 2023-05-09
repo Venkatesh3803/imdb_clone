@@ -5,19 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imdb Api</title>
+    <title>TV Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
-
-    </script>
-    <script src="script.js" defer></script>
+    <script src="./script.js"></script>
 </head>
 
 <body>
-    <!-- header section -->
-    <section>
+    <section id="navber">
         <nav>
             <div class="nav_container">
                 <div class="nav_left">
@@ -27,7 +22,7 @@
                     </div>
                     <div class="nav_list">
                         <ul>
-                            <li class="active"><a href="#">HOME</a></li>
+                            <li><a href="index.html">HOME</a></li>
                         </ul>
                         <ul>
                             <li><a href="movies.html">MOVIES</a></li>
@@ -36,7 +31,7 @@
                             <li><a href="tvshows.html">TV SHOWS</a></li>
                         </ul>
                         <ul>
-                            <li><a href="series.html">UPCOMING</a></li>
+                            <li><a href="series.html">SERICES</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,80 +49,41 @@
         </nav>
     </section>
 
-    <!-- hero section -->
-    <section id="hero">
-        <div class="hero_container swiper">
-            <div class="slider swiper-wrapper" id="slider">
-
+    <section id="details_page">
+        <!-- <div class="detailspage_container">
+            <img src="" alt="">
+            <div class="detailspage_content">
+                <div class="detalispage_left">
+                    <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2020/08/Pathaan-01.jpg" alt="">
+                </div>
+                <div class="detailspage_right">
+                    <h1>MOVIE TITLE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci et, error ad id earum neque eos
+                        commodi deleniti, sapiente, illo inventore hic! Ipsa, voluptatibus labore. Quo labore quas
+                        fugiat
+                        voluptatibus!</p>
+                    <h3>Rating: <span><i class="fa fa-star"></i> 5.5/10</span></h3>
+                    <h3>Release date: 12/5/2021</h3>
+                    <button> Watch Now <i class="fa fa-play"></i> </button>
+                </div>
             </div>
-            <div class="arrows">
-                <div style="position: absolute; top:-380px" class="swiper-button-next"></div>
-                <div style="position: absolute; top:-380px" class="swiper-button-prev"></div>
-            </div>
-        </div>
-
+            
+        </div> -->
     </section>
 
-    <!-- popular movies -->
-
-
     <section id="popular_movies">
-        <h3>POPULAR MOVIES</h3>
-        <div class="swiper">
-
-            <div class="movies_container swiper-wrapper" id="movie_container">
-                <!-- <div class="card ">
-                    <a href="moviedetails.html">
-                        <img src="https://wallpaperaccess.com/full/1923020.jpg" alt="">
-                        <div class="movie_details">
-                            <h3>Lorem</h3>
-                            <p>Rating : 4</p>
-                            <p>Release Date : xx/xx/xxxx</p>
-                        </div>
-                    </a>
-                </div> -->
-
-
-                <p><i class="fa-solid fa-chevron-right"></i></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- popular tv shows -->
-    <section id="popular_movies">
-        <h3>TV SHOWS</h3>
-        <div class="movies_container" id="tv_container">
+        <h3>SMILILAR PROGRAMS</h3>
+        <div class="movies_container" id="similar_container">
             <!-- <div class="card">
-                <a href="moviedetails.html">
-                    <img src="https://wallpaperaccess.com/full/1923020.jpg" alt="">
-                    <div class="movie_details">
-                        <h3>Lorem</h3>
-                        <p>Rating : 4</p>
-                        <p>Release Date : xx/xx/xxxx</p>
-                    </div>
-                </a>
+                <img src="https://wallpaperaccess.com/full/1923020.jpg" alt="">
+                <div class="movie_details">
+                    <h3>Lorem</h3>
+                    <p>Rating : 4</p>
+                    <p>Release Date : xx/xx/xxxx</p>
+                </div>
             </div> -->
-
 
             <p><i class="fa-solid fa-chevron-right"></i></p>
-        </div>
-    </section>
-
-    <!-- series -->
-    <section id="popular_movies">
-        <h3>UPCOMING MOVIES</h3>
-        <div class="movies_container" id="web_container">
-            <!-- <div class="card">
-                <a href="moviedetails.html">
-                    <img src="https://wallpaperaccess.com/full/1923020.jpg" alt="">
-                    <div class="movie_details">
-                        <h3>Lorem</h3>
-                        <p>Rating : 4</p>
-                        <p>Release Date : xx/xx/xxxx</p>
-                    </div>
-                </a>
-            </div> -->
-            <p><i class="sliderarrow fa-solid fa-chevron-right"></i></p>
         </div>
     </section>
 
