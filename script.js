@@ -40,7 +40,8 @@ async function displayMoviesDetails() {
 	div.classList.add("detailspage_container")
 
 	div.innerHTML = `
-	 ${movieDetails.backdrop_path ? `<img src="https://image.tmdb.org/t/p/w500${movieDetails.backdrop_path}"alt="">` : `<img src="../images/showcase-bg.jpg"alt="">`}
+	<div class = "background"></div>
+	${movieDetails.backdrop_path ? `<img src="https://image.tmdb.org/t/p/w500${movieDetails.backdrop_path}"alt="">` : `<img src="../images/showcase-bg.jpg"alt="">`}
 	<div class="detailspage_content">
 		<div class="detalispage_left">
 		<img src="https://image.tmdb.org/t/p/w500${movieDetails.poster_path}"alt="">
@@ -73,6 +74,7 @@ async function displayTvDetails() {
 	div.classList.add("detailspage_container")
 
 	div.innerHTML = `
+	<div class = "background"></div>
 	 ${tvDetails.backdrop_path ? `<img src="https://image.tmdb.org/t/p/w500${tvDetails.backdrop_path}"alt="">` : `<img src="../images/showcase-bg.jpg"alt="">`}
 	<div class="detailspage_content">
 		<div class="detalispage_left">
@@ -90,6 +92,7 @@ async function displayTvDetails() {
 			<button> Home Page <i class="fa fa-play"></i> </button>
 		</div>
 	</div>
+
 	`
 	document.getElementById("details_page").appendChild(div)
 }
@@ -152,6 +155,7 @@ async function displayMovies() {
 		// div.classList.add("swiper-slide");
 
 		div.innerHTML = `
+		<div class="card_background"></div>
 		<a href="movie-details.html?id=${movie.id}">
                     <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}"alt="">
                     <div class="movie_details">
